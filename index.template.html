@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="meta.title"></title>
+<meta name="description" content="" data-i18n-attr="content:meta.desc">
+<meta name="theme-color" content="#0B1F4D">
+<link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Swami Samarth Tourism">
+<meta property="og:title" content="" data-i18n-attr="content:meta.title">
+<meta property="og:description" content="" data-i18n-attr="content:meta.desc">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<script>
+/* Reveal-on-scroll is only switched on when it can actually run; main.js clears the guard. */
+(function () {
+  var d = document.documentElement;
+  var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if ("IntersectionObserver" in window && !reduce) {
+    d.className += " anim";
+    window.__ssGuard = setTimeout(function () { d.className = d.className.replace(" anim", ""); }, 6000);
+  }
+})();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "name": "Swami Samarth Tourism",
+  "slogan": "तुमची यात्रा • आमची जबाबदारी",
+  "description": "Complete tour planning — train, bus, hotel, food and sightseeing — for religious, family and group tours across India.",
+  "image": "assets/logo-640.jpg",
+  "logo": "assets/logo-640.jpg",
+  "telephone": ["+918591124310", "+919324389943", "+919323997703"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Ganga Vihar Building, Kothari Galli, Opposite Tirupati Sweets",
+    "addressLocality": "Uran",
+    "addressRegion": "Raigad, Maharashtra",
+    "addressCountry": "IN"
+  },
+  "areaServed": { "@type": "Country", "name": "India" },
+  "knowsLanguage": ["en", "mr", "hi"]
+}
+</script>
+</head>
+<body>
+
+<!-- Icon sprite: one set of stroke icons, reused with <use> -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-train" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="14" rx="3.5"/><path d="M5 11h14"/><circle cx="9" cy="14.2" r=".7"/><circle cx="15" cy="14.2" r=".7"/><path d="M8 21l2-4M16 21l-2-4"/></symbol>
+    <symbol id="i-hotel" viewBox="0 0 24 24"><path d="M3 20V5M3 15h18v5M21 15v-2.5A3.5 3.5 0 0 0 17.500 9H11v6"/><circle cx="7" cy="10.500" r="2"/></symbol>
+    <symbol id="i-bus" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="15" rx="3.500"/><path d="M4 11h16M7 18v2.500M17 18v2.500"/><circle cx="8" cy="14.500" r=".7"/><circle cx="16" cy="14.500" r=".7"/></symbol>
+    <symbol id="i-food" viewBox="0 0 24 24"><path d="M6 3v7a2 2 0 0 0 2 2v9M10 3v7a2 2 0 0 1-2 2M8 3v5M17 3c-2.200 1.800-2.800 4.800-2.800 8h2.800v10"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.500-5.600-6.500-11a6.500 6.500 0 0 1 13 0c0 5.400-6.500 11-6.500 11z"/><circle cx="12" cy="10" r="2.300"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="16" rx="2.500"/><path d="M4 10h16M8 3v4M16 3v4M8 14h3"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-rupee" viewBox="0 0 24 24"><path d="M7 5h10M7 9.500h10M8 5c5.500 0 5.500 8.500 0 8.500H7l8 6.500"/></symbol>
+    <symbol id="i-calm" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8.500 14a4.500 4.500 0 0 0 7 0M9 9.500h.01M15 9.500h.01"/></symbol>
+    <symbol id="i-family" viewBox="0 0 24 24"><circle cx="8" cy="7" r="2.500"/><circle cx="16.500" cy="8.500" r="2"/><path d="M3 20v-1.500A3.500 3.500 0 0 1 6.500 15h3a3.500 3.500 0 0 1 3.500 3.500V20M14.500 15H17a3.500 3.500 0 0 1 3.500 3.500V20"/></symbol>
+    <symbol id="i-group" viewBox="0 0 24 24"><circle cx="12" cy="7" r="2.500"/><circle cx="5.500" cy="9.500" r="2"/><circle cx="18.500" cy="9.500" r="2"/><path d="M8 20v-2a4 4 0 0 1 8 0v2M2.500 19v-1a3 3 0 0 1 3-3M21.500 19v-1a3 3 0 0 0-3-3"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z M9 4v14M15 6v14"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.500 4.500 4.500L19 7.500"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M3 21l1.600-4.700A8.500 8.500 0 1 1 8 19.600z"/><path d="M9 8.500c0 3 3 6 6 6l1-1.600-2-1-.8.800a4 4 0 0 1-2-2l.8-.8-1-2z"/></symbol>
+    <symbol id="i-temple" viewBox="0 0 24 24"><path d="M12 2.500V5M7 21V12a5 5 0 0 1 10 0v9M4 21h16M10 21v-3.500a2 2 0 0 1 4 0V21"/></symbol>
+    <symbol id="i-mount" viewBox="0 0 24 24"><path d="m3 20 6-10 4 6 3-4 5 8z"/><path d="m7.500 12.500 1.500-2.500 1.500 2.500"/></symbol>
+    <symbol id="i-wave" viewBox="0 0 24 24"><path d="M3 10c2.500-3 4.500 3 7 0s4.500 3 7 0 2.500-1.500 4-1M3 16c2.500-3 4.500 3 7 0s4.500 3 7 0 2.500-1.500 4-1"/></symbol>
+    <symbol id="i-fort" viewBox="0 0 24 24"><path d="M4 21V9h3V6h2v3h2V6h2v3h3v12M4 21h16M10 21v-4a2 2 0 0 1 4 0v4"/></symbol>
+    <symbol id="i-pine" viewBox="0 0 24 24"><path d="m12 3 5 7h-3l4 6H6l4-6H7zM12 16v5"/></symbol>
+    <symbol id="i-lotus" viewBox="0 0 24 24"><path d="M12 20c-3-2-5-5-5-8 2 0 4 1 5 3 1-2 3-3 5-3 0 3-2 6-5 8zM12 15V6c-2 2-2.500 5 0 9 2.500-4 2-7 0-9z"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 11 9-8 9 8M5 10v10h14V10M10 20v-5h4v5"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.500v2.500M12 19v2.500M2.500 12H5M19 12h2.500M5.300 5.300l1.800 1.800M16.900 16.900l1.800 1.800M5.300 18.700l1.800-1.800M16.900 7.100l1.800-1.800"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2.500"/><path d="m8 7 1.500-3h5L16 7"/><circle cx="12" cy="13.500" r="3.500"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.700 5.600 6.100.9-4.400 4.300 1 6.100L12 17l-5.400 2.900 1-6.100L3.200 9.500l6.100-.9z"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="2.500"/><path d="m16 10 5-3v10l-5-3"/></symbol>
+    <symbol id="i-form" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2.500"/><path d="M9 8h6M9 12h6M9 16h3"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#enquiry" data-i18n="a11y.skip"></a>
+
+<header class="top">
+  <div class="top-in">
+    <a class="top-brand" href="#top" data-i18n-attr="aria-label:a11y.home" aria-label="">
+      <img src="assets/logo-160.jpg" width="40" height="40" alt="Swami Samarth Tourism logo" decoding="async">
+      <span class="top-name" data-i18n="brand.name"></span>
+    </a>
+    <div class="lang" role="group" data-i18n-attr="aria-label:a11y.lang" aria-label="">
+      <button type="button" data-lang="en" aria-pressed="true" lang="en">English</button>
+      <button type="button" data-lang="mr" aria-pressed="false" lang="mr">मराठी</button>
+      <button type="button" data-lang="hi" aria-pressed="false" lang="hi">हिन्दी</button>
+    </div>
+    <a class="top-call" data-primary-call href="tel:+918591124310" data-i18n-attr="aria-label:a11y.callUs" aria-label="">
+      <svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- 1 · HERO -->
+<section class="hero" aria-labelledby="hero-h">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="tagline" data-i18n="brand.tag"></p>
+      <h1 id="hero-h" class="hero-title ml" data-i18n="hero.h1"></h1>
+      <p class="hero-sub ml" data-i18n="hero.sub"></p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#enquiry" data-i18n="hero.cta1"></a>
+        <a class="btn btn-ghost" data-primary-call href="tel:+918591124310">
+          <svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="hero.cta2"></span>
+        </a>
+      </div>
+      <div class="phones" data-phones="hero" aria-label="Phone numbers"></div>
+      <p class="hero-trust" data-i18n="hero.trust"></p>
+    </div>
+
+    <div class="hero-art">
+      <svg class="scene" viewBox="0 0 440 440" role="img" data-i18n-attr="aria-label:hero.sceneAlt" aria-label="">
+        <defs><clipPath id="sceneClip"><circle cx="220" cy="220" r="200"/></clipPath></defs>
+        <circle class="ring" cx="220" cy="220" r="214" fill="none" stroke="#F59A23" stroke-width="3" stroke-dasharray="2 11" stroke-linecap="round"/>
+        <g clip-path="url(#sceneClip)">
+          <rect width="440" height="440" fill="#DCEBF7"/>
+          <circle cx="292" cy="128" r="50" fill="#FCB424" opacity=".28"/>
+          <circle cx="292" cy="128" r="32" fill="#FCB424"/>
+          <path d="M20 300 110 170l55 70 60-90 95 140 40-50 60 70v130H20z" fill="#A9C4E4"/>
+          <path d="M20 330 100 240l60 60 80-80 180 140v80H20z" fill="#2B5AA0"/>
+          <path d="M20 372q110-52 210-17t190-10v95H20z" fill="#2F8F47"/>
+          <g transform="translate(104 284)">
+            <path d="M-6 40 17 6l23 34z" fill="#F59A23"/><circle cx="17" cy="4" r="3" fill="#F59A23"/>
+            <rect x="0" y="40" width="34" height="22" fill="#fff"/><rect x="12" y="48" width="10" height="14" rx="5" fill="#0F2A63"/>
+          </g>
+          <path d="M20 400q150-48 230-22t170-6v80H20z" fill="#14275A"/>
+          <path class="road-dash" d="M20 412q150-46 230-20t170-6" fill="none" stroke="#FCB424" stroke-width="3" stroke-dasharray="14 12"/>
+          <g transform="translate(140 344) scale(1.12)">
+            <rect x="0" y="0" width="84" height="34" rx="8" fill="#fff"/>
+            <rect x="0" y="22" width="84" height="6" fill="#F59A23"/>
+            <g fill="#2B5AA0"><rect x="6" y="6" width="14" height="11" rx="2"/><rect x="24" y="6" width="14" height="11" rx="2"/><rect x="42" y="6" width="14" height="11" rx="2"/><rect x="60" y="6" width="18" height="11" rx="2"/></g>
+            <circle cx="20" cy="35" r="7" fill="#0B1F4D"/><circle cx="64" cy="35" r="7" fill="#0B1F4D"/><circle cx="20" cy="35" r="2.500" fill="#fff"/><circle cx="64" cy="35" r="2.500" fill="#fff"/>
+          </g>
+          <path d="M352 372q8-34-4-68" fill="none" stroke="#7A5230" stroke-width="5" stroke-linecap="round"/>
+          <g fill="none" stroke="#1E7A34" stroke-width="4.500" stroke-linecap="round">
+            <path d="M348 304q-24-14-40-4M348 304q-12-26-30-28M348 304q18-24 36-18M348 304q24-4 38 10"/>
+          </g>
+          <path class="route" d="M64 232C120 112 250 92 372 196" fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="3 9" stroke-linecap="round"/>
+          <path d="M60 236 82 224l-4 22-6-6z" fill="#fff" stroke="#0F2A63" stroke-width="1.500" stroke-linejoin="round"/>
+        </g>
+        <circle cx="220" cy="220" r="200" fill="none" stroke="#fff" stroke-width="6"/>
+      </svg>
+      <img class="hero-logo" src="assets/logo-320.jpg" width="104" height="104" alt="" decoding="async">
+    </div>
+  </div>
+</section>
+
+<!-- 2 · PROBLEM -->
+<section class="sec sec--arc sec--white" style="--prev:var(--sky)" aria-labelledby="prob-h">
+  <div class="wrap">
+    <h2 id="prob-h" class="h2 ml rv" data-i18n="prob.h"></h2>
+    <ul class="problem">
+      <li class="rv"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-train"/></svg><div><h3 data-i18n="prob.c1.t"></h3><p data-i18n="prob.c1.d"></p></div></li>
+      <li class="rv"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-hotel"/></svg><div><h3 data-i18n="prob.c2.t"></h3><p data-i18n="prob.c2.d"></p></div></li>
+      <li class="rv"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-bus"/></svg><div><h3 data-i18n="prob.c3.t"></h3><p data-i18n="prob.c3.d"></p></div></li>
+      <li class="rv"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-food"/></svg><div><h3 data-i18n="prob.c4.t"></h3><p data-i18n="prob.c4.d"></p></div></li>
+      <li class="rv"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-pin"/></svg><div><h3 data-i18n="prob.c5.t"></h3><p data-i18n="prob.c5.d"></p></div></li>
+      <li class="rv"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-cal"/></svg><div><h3 data-i18n="prob.c6.t"></h3><p data-i18n="prob.c6.d"></p></div></li>
+    </ul>
+    <p class="lead rv" data-i18n="prob.lead"></p>
+    <p class="question rv" data-i18n="prob.close"></p>
+  </div>
+</section>
+
+<!-- 3 · WHAT YOU MAY LOSE -->
+<section class="sec sec--arc sec--mist" style="--prev:#fff" aria-labelledby="lose-h">
+  <div class="wrap">
+    <h2 id="lose-h" class="h2 ml rv" data-i18n="lose.h"></h2>
+    <p class="sub rv" data-i18n="lose.sub"></p>
+    <div class="lose">
+      <article class="rv"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-clock"/></svg><h3 data-i18n="lose.c1.t"></h3><p data-i18n="lose.c1.d"></p></article>
+      <article class="rv"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-rupee"/></svg><h3 data-i18n="lose.c2.t"></h3><p data-i18n="lose.c2.d"></p></article>
+      <article class="rv"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-calm"/></svg><h3 data-i18n="lose.c3.t"></h3><p data-i18n="lose.c3.d"></p></article>
+      <article class="rv"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-family"/></svg><h3 data-i18n="lose.c4.t"></h3><p data-i18n="lose.c4.d"></p></article>
+      <article class="rv"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-map"/></svg><h3 data-i18n="lose.c5.t"></h3><p data-i18n="lose.c5.d"></p></article>
+    </div>
+  </div>
+</section>
+
+<!-- 4 · WHAT MAY HAPPEN NEXT -->
+<section class="sec sec--arc sec--navy" style="--prev:var(--mist)" aria-labelledby="next-h">
+  <div class="wrap narrow">
+    <h2 id="next-h" class="h2 ml rv" data-i18n="next.h"></h2>
+    <ul class="nexts">
+      <li class="rv"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg><span data-i18n="next.i1"></span></li>
+      <li class="rv"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg><span data-i18n="next.i2"></span></li>
+      <li class="rv"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg><span data-i18n="next.i3"></span></li>
+      <li class="rv"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg><span data-i18n="next.i4"></span></li>
+      <li class="rv"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg><span data-i18n="next.i5"></span></li>
+      <li class="rv"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg><span data-i18n="next.i6"></span></li>
+    </ul>
+    <p class="bridge rv" data-i18n="next.bridge"></p>
+    <a class="btn btn-primary btn-wide rv" href="#enquiry" data-i18n="next.cta"></a>
+  </div>
+</section>
+
+<!-- 5 · SOLUTION + FEATURES -->
+<section class="sec sec--arc sec--white" style="--prev:var(--navy-d)" aria-labelledby="sol-h">
+  <div class="wrap">
+    <div class="sol-head">
+      <p class="sol-brand rv" data-i18n="sol.brand"></p>
+      <h2 id="sol-h" class="h2 ml rv" data-i18n="sol.h"></h2>
+      <p class="sol-p ml rv" data-i18n="sol.p"></p>
+    </div>
+    <ul class="feat">
+      <li class="rv"><span class="chip chip-o"><svg class="ic" aria-hidden="true"><use href="#i-train"/></svg></span><div><h3 data-i18n="sol.f1.t"></h3><p data-i18n="sol.f1.d"></p></div></li>
+      <li class="rv"><span class="chip chip-o"><svg class="ic" aria-hidden="true"><use href="#i-bus"/></svg></span><div><h3 data-i18n="sol.f2.t"></h3><p data-i18n="sol.f2.d"></p></div></li>
+      <li class="rv"><span class="chip chip-g"><svg class="ic" aria-hidden="true"><use href="#i-hotel"/></svg></span><div><h3 data-i18n="sol.f3.t"></h3><p data-i18n="sol.f3.d"></p></div></li>
+      <li class="rv"><span class="chip chip-g"><svg class="ic" aria-hidden="true"><use href="#i-family"/></svg></span><div><h3 data-i18n="sol.f4.t"></h3><p data-i18n="sol.f4.d"></p></div></li>
+      <li class="rv"><span class="chip chip-o"><svg class="ic" aria-hidden="true"><use href="#i-food"/></svg></span><div><h3 data-i18n="sol.f5.t"></h3><p data-i18n="sol.f5.d"></p></div></li>
+      <li class="rv"><span class="chip chip-g"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg></span><div><h3 data-i18n="sol.f6.t"></h3><p data-i18n="sol.f6.d"></p></div></li>
+      <li class="rv feat-main"><span class="chip chip-n"><svg class="ic" aria-hidden="true"><use href="#i-cal"/></svg></span><div><h3 data-i18n="sol.f7.t"></h3><p data-i18n="sol.f7.d"></p></div></li>
+    </ul>
+    <p class="center rv"><a class="btn btn-primary" href="#enquiry" data-i18n="hero.cta1"></a></p>
+  </div>
+</section>
+
+<!-- 6 · BENEFITS -->
+<section class="sec sec--arc sec--leaf" style="--prev:#fff" aria-labelledby="ben-h">
+  <div class="wrap">
+    <h2 id="ben-h" class="h2 ml rv" data-i18n="ben.h"></h2>
+    <div class="ben">
+      <article class="rv"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-calm"/></svg><h3 data-i18n="ben.b1.t"></h3><p data-i18n="ben.b1.d"></p></article>
+      <article class="rv"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-group"/></svg><h3 data-i18n="ben.b2.t"></h3><p data-i18n="ben.b2.d"></p></article>
+      <article class="rv"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-family"/></svg><h3 data-i18n="ben.b3.t"></h3><p data-i18n="ben.b3.d"></p></article>
+      <article class="rv"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-cal"/></svg><h3 data-i18n="ben.b4.t"></h3><p data-i18n="ben.b4.d"></p></article>
+      <article class="rv"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-hotel"/></svg><h3 data-i18n="ben.b5.t"></h3><p data-i18n="ben.b5.d"></p></article>
+      <article class="rv"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-sun"/></svg><h3 data-i18n="ben.b6.t"></h3><p data-i18n="ben.b6.d"></p></article>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · TOUR TYPES -->
+<section class="sec sec--arc sec--white" style="--prev:var(--leaf)" aria-labelledby="tt-h">
+  <div class="wrap">
+    <h2 id="tt-h" class="h2 ml rv" data-i18n="tt.h"></h2>
+    <p class="sub rv" data-i18n="tt.hint"></p>
+    <div class="tours">
+      <button type="button" class="rv" data-type="Religious"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-temple"/></svg><span data-i18n="tt.t1"></span></button>
+      <button type="button" class="rv" data-type="Holiday"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-mount"/></svg><span data-i18n="tt.t2"></span></button>
+      <button type="button" class="rv" data-type="Holiday"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-wave"/></svg><span data-i18n="tt.t3"></span></button>
+      <button type="button" class="rv" data-type="Holiday"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-fort"/></svg><span data-i18n="tt.t4"></span></button>
+      <button type="button" class="rv" data-type="Family"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-family"/></svg><span data-i18n="tt.t5"></span></button>
+      <button type="button" class="rv" data-type="Group"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-group"/></svg><span data-i18n="tt.t6"></span></button>
+      <button type="button" class="rv" data-type="Holiday"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-train"/></svg><span data-i18n="tt.t7"></span></button>
+      <button type="button" class="rv" data-type="Holiday"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-pine"/></svg><span data-i18n="tt.t8"></span></button>
+      <button type="button" class="rv" data-type="Religious"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-lotus"/></svg><span data-i18n="tt.t9"></span></button>
+    </div>
+  </div>
+</section>
+
+<!-- 8 · DESTINATIONS -->
+<section class="sec sec--arc sec--mist" style="--prev:#fff" aria-labelledby="dest-h">
+  <div class="wrap">
+    <h2 id="dest-h" class="h2 ml rv" data-i18n="dest.h"></h2>
+    <p class="sub rv" data-i18n="dest.sub"></p>
+    <div id="destWrap" class="dest rv"></div>
+  </div>
+</section>
+
+<!-- 9 · PROOF / TRUST -->
+<section class="sec sec--arc sec--white" style="--prev:var(--mist)" aria-labelledby="proof-h">
+  <div class="wrap">
+    <h2 id="proof-h" class="h2 ml rv" data-i18n="proof.h"></h2>
+    <p class="sub rv" data-i18n="proof.sub"></p>
+    <div id="proofGrid" class="proof"></div>
+    <div class="office rv">
+      <svg class="ic ic-lg" aria-hidden="true"><use href="#i-pin"/></svg>
+      <div>
+        <h3 data-i18n="proof.office.t"></h3>
+        <p data-i18n="proof.office.d"></p>
+        <address class="ml" data-i18n="ftr.addr"></address>
+        <div class="phones" data-phones="proof"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · WHY SWAMI SAMARTH -->
+<section class="sec sec--arc sec--navy" style="--prev:#fff" aria-labelledby="why-h">
+  <div class="wrap">
+    <h2 id="why-h" class="h2 ml rv" data-i18n="why.h"></h2>
+    <ul class="why">
+      <li class="rv"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="why.i1"></span></li>
+      <li class="rv"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="why.i2"></span></li>
+      <li class="rv"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="why.i3"></span></li>
+      <li class="rv"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="why.i4"></span></li>
+      <li class="rv"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="why.i5"></span></li>
+      <li class="rv"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="why.i6"></span></li>
+      <li class="rv"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="why.i7"></span></li>
+      <li class="rv"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="why.i8"></span></li>
+      <li class="rv"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="why.i9"></span></li>
+      <li class="rv"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="why.i10"></span></li>
+      <li class="rv"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="why.i11"></span></li>
+    </ul>
+    <p class="why-tag rv" data-i18n="brand.tag"></p>
+  </div>
+</section>
+
+<!-- 11 · FINAL EMOTIONAL CTA + JOURNEY -->
+<section class="sec sec--arc sec--sky" style="--prev:var(--navy-d)" aria-labelledby="fin-h">
+  <div class="wrap">
+    <h2 id="fin-h" class="h2 ml center rv" data-i18n="fin.h1"></h2>
+    <p class="sr-only" data-i18n="fin.path"></p>
+    <div class="journey rv" id="journey">
+      <svg class="jpath" viewBox="0 0 800 70" aria-hidden="true">
+        <path class="jtrack" d="M50 12C100 12 100 58 150 58C200 58 200 12 250 12C300 12 300 58 350 58C400 58 400 12 450 12C500 12 500 58 550 58C600 58 600 12 650 12C700 12 700 58 750 58"/>
+        <path class="jfill" pathLength="1" d="M50 12C100 12 100 58 150 58C200 58 200 12 250 12C300 12 300 58 350 58C400 58 400 12 450 12C500 12 500 58 550 58C600 58 600 12 650 12C700 12 700 58 750 58"/>
+      </svg>
+      <ol>
+        <li style="--i:0"><span class="stop"><svg class="ic" aria-hidden="true"><use href="#i-home"/></svg></span><span class="stop-l" data-i18n="fin.s1"></span></li>
+        <li style="--i:1"><span class="stop"><svg class="ic" aria-hidden="true"><use href="#i-train"/></svg></span><span class="stop-l" data-i18n="fin.s2"></span></li>
+        <li style="--i:2"><span class="stop"><svg class="ic" aria-hidden="true"><use href="#i-hotel"/></svg></span><span class="stop-l" data-i18n="fin.s3"></span></li>
+        <li style="--i:3"><span class="stop"><svg class="ic" aria-hidden="true"><use href="#i-bus"/></svg></span><span class="stop-l" data-i18n="fin.s4"></span></li>
+        <li style="--i:4"><span class="stop"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg></span><span class="stop-l" data-i18n="fin.s5"></span></li>
+        <li style="--i:5"><span class="stop"><svg class="ic" aria-hidden="true"><use href="#i-food"/></svg></span><span class="stop-l" data-i18n="fin.s6"></span></li>
+        <li style="--i:6"><span class="stop"><svg class="ic" aria-hidden="true"><use href="#i-camera"/></svg></span><span class="stop-l" data-i18n="fin.s7"></span></li>
+        <li style="--i:7"><span class="stop"><svg class="ic" aria-hidden="true"><use href="#i-home"/></svg></span><span class="stop-l" data-i18n="fin.s8"></span></li>
+      </ol>
+    </div>
+    <p class="fin-h2 ml center rv" data-i18n="fin.h2"></p>
+    <p class="center rv"><a class="btn btn-primary" href="#enquiry" data-i18n="hero.cta1"></a></p>
+  </div>
+</section>
+
+<!-- 12 · ENQUIRY -->
+<section class="sec sec--arc sec--navy enq" id="enquiry" style="--prev:var(--sky)" aria-labelledby="enq-h">
+  <div class="wrap enq-grid">
+    <div class="enq-copy">
+      <h2 id="enq-h" class="h2 ml" data-i18n="enq.h"></h2>
+      <p class="ml enq-sub" data-i18n="enq.sub"></p>
+    </div>
+
+    <form id="enqForm" class="form" novalidate autocomplete="on">
+      <div class="field">
+        <label for="f-name"><span data-i18n="enq.name"></span> <b class="req" aria-hidden="true">*</b></label>
+        <input id="f-name" name="name" type="text" autocomplete="name" required maxlength="80" aria-describedby="e-name">
+        <p class="err" id="e-name" hidden></p>
+      </div>
+      <div class="field">
+        <label for="f-mobile"><span data-i18n="enq.mobile"></span> <b class="req" aria-hidden="true">*</b></label>
+        <input id="f-mobile" name="mobile" type="tel" inputmode="numeric" autocomplete="tel-national" required maxlength="18" placeholder="98765 43210" aria-describedby="e-mobile">
+        <p class="err" id="e-mobile" hidden></p>
+      </div>
+      <div class="field">
+        <label for="f-wa" data-i18n="enq.wa"></label>
+        <input id="f-wa" name="whatsapp" type="tel" inputmode="numeric" autocomplete="off" maxlength="18" placeholder="98765 43210" aria-describedby="e-wa">
+        <p class="err" id="e-wa" hidden></p>
+      </div>
+      <div class="field">
+        <label for="f-dest"><span data-i18n="enq.dest"></span> <b class="req" aria-hidden="true">*</b></label>
+        <input id="f-dest" name="destination" type="text" list="destList" autocomplete="off" required maxlength="80" placeholder="" data-i18n-attr="placeholder:enq.pDest" aria-describedby="e-dest">
+        <datalist id="destList"></datalist>
+        <p class="err" id="e-dest" hidden></p>
+      </div>
+      <div class="field">
+        <label for="f-trav"><span data-i18n="enq.trav"></span> <b class="req" aria-hidden="true">*</b></label>
+        <input id="f-trav" name="travellers" type="number" inputmode="numeric" min="1" max="500" step="1" required aria-describedby="e-trav">
+        <p class="err" id="e-trav" hidden></p>
+      </div>
+      <div class="field">
+        <label for="f-month"><span data-i18n="enq.month"></span> <b class="req" aria-hidden="true">*</b></label>
+        <select id="f-month" name="month" required aria-describedby="e-month"><option value="" data-i18n="enq.pMonth"></option></select>
+        <p class="err" id="e-month" hidden></p>
+      </div>
+      <fieldset class="field types">
+        <legend data-i18n="enq.type"></legend>
+        <label><input type="radio" name="tourType" value="Religious"><span data-i18n="enq.type.Religious"></span></label>
+        <label><input type="radio" name="tourType" value="Family"><span data-i18n="enq.type.Family"></span></label>
+        <label><input type="radio" name="tourType" value="Group"><span data-i18n="enq.type.Group"></span></label>
+        <label><input type="radio" name="tourType" value="Holiday"><span data-i18n="enq.type.Holiday"></span></label>
+        <label><input type="radio" name="tourType" value="Other"><span data-i18n="enq.type.Other"></span></label>
+      </fieldset>
+      <div class="field wide">
+        <label for="f-msg" data-i18n="enq.msg"></label>
+        <textarea id="f-msg" name="message" rows="3" maxlength="600" placeholder="" data-i18n-attr="placeholder:enq.pMsg"></textarea>
+      </div>
+      <div class="hp" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+
+      <div id="enqStatus" class="status ml" role="status" aria-live="polite" tabindex="-1" hidden></div>
+
+      <div class="wide actions">
+        <button type="submit" class="btn btn-primary btn-wide" id="enqSubmit"><span data-i18n="enq.submit"></span></button>
+        <a class="btn btn-wa btn-wide" id="enqWa" href="#" target="_blank" rel="noopener" hidden>
+          <svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="enq.waCta"></span>
+        </a>
+        <p class="note" data-i18n="enq.sensitive"></p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- 13 · PHONE / WHATSAPP -->
+<section class="sec sec--arc sec--white contact" style="--prev:var(--navy-d)" aria-labelledby="con-h">
+  <div class="wrap narrow center">
+    <h2 id="con-h" class="h2 ml" data-i18n="con.h"></h2>
+    <p class="sub" data-i18n="con.sub"></p>
+    <div class="phones phones-big" data-phones="contact"></div>
+    <a class="btn btn-wa" data-wa href="#" target="_blank" rel="noopener" hidden>
+      <svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="enq.waCta"></span>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<!-- 14 · FOOTER -->
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div>
+      <img class="foot-logo" src="assets/logo-160.jpg" width="72" height="72" alt="Swami Samarth Tourism logo" loading="lazy" decoding="async">
+      <p class="foot-name" data-i18n="brand.name"></p>
+      <p class="foot-tag" data-i18n="brand.tag"></p>
+    </div>
+    <div>
+      <h3 data-i18n="ftr.phones"></h3>
+      <div class="phones phones-foot" data-phones="footer"></div>
+    </div>
+    <div>
+      <h3 data-i18n="ftr.addrLabel"></h3>
+      <address class="ml" data-i18n="ftr.addr"></address>
+      <a class="maplink" id="mapLink" href="https://www.google.com/maps/search/?api=1&amp;query=Ganga+Vihar+Building+Kothari+Galli+Uran+Raigad" target="_blank" rel="noopener" data-i18n="ftr.map"></a>
+    </div>
+    <ul class="foot-links">
+      <li><a data-primary-call href="tel:+918591124310"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="bar.call"></span></a></li>
+      <li><a data-wa href="#" target="_blank" rel="noopener" hidden><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="bar.wa"></span></a></li>
+      <li><a href="#enquiry"><svg class="ic" aria-hidden="true"><use href="#i-form"/></svg><span data-i18n="bar.enq"></span></a></li>
+    </ul>
+  </div>
+  <p class="copy" data-i18n="ftr.copy"></p>
+</footer>
+
+<!-- Desktop floating CTA (hidden on phones and while the form is on screen) -->
+<div class="float" id="floatCta" hidden>
+  <a class="float-wa" data-wa href="#" target="_blank" rel="noopener" hidden data-i18n-attr="aria-label:enq.waCta" aria-label=""><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg></a>
+  <a class="btn btn-primary" href="#enquiry" data-i18n="hero.cta1"></a>
+</div>
+
+<!-- Mobile sticky bar -->
+<nav class="bar" id="stickyBar" hidden>
+  <a data-primary-call href="tel:+918591124310"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="bar.call"></span></a>
+  <a data-wa href="#" target="_blank" rel="noopener" hidden><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="bar.wa"></span></a>
+  <a class="bar-enq" href="#enquiry"><svg class="ic" aria-hidden="true"><use href="#i-form"/></svg><span data-i18n="bar.enq"></span></a>
+</nav>
+
+<script src="js/i18n.js"></script>
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
